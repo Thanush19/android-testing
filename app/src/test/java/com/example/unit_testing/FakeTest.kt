@@ -5,6 +5,11 @@ import org.junit.Test
 //    - Purpose: Defines user data operations.
 //    - Benefit: Can replace real DB with a test double for fast, isolated tests.
 
+interface UserRepository{
+    fun addUser(name:String)
+
+    fun getUserCount():Int
+}
 class ViewModelForFakeImpl(private val repository: UserRepository) {
     fun registerUser(name: String) {
         repository.addUser(name)
