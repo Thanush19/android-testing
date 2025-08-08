@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/app/build.gradle.kts">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/build.gradle.kts" />
+              <option name="originalContent" value="plugins {&#10;    alias(libs.plugins.android.application)&#10;    alias(libs.plugins.kotlin.android)&#10;}&#10;&#10;android {&#10;    namespace = &quot;com.example.unit_testing&quot;&#10;    compileSdk = 36&#10;&#10;    defaultConfig {&#10;        applicationId = &quot;com.example.unit_testing&quot;&#10;        minSdk = 34&#10;        targetSdk = 36&#10;        versionCode = 1&#10;        versionName = &quot;1.0&quot;&#10;&#10;        testInstrumentationRunner = &quot;androidx.test.runner.AndroidJUnitRunner&quot;&#10;    }&#10;&#10;    buildTypes {&#10;        release {&#10;            isMinifyEnabled = false&#10;            proguardFiles(&#10;                getDefaultProguardFile(&quot;proguard-android-optimize.txt&quot;),&#10;                &quot;proguard-rules.pro&quot;&#10;            )&#10;        }&#10;    }&#10;    compileOptions {&#10;        sourceCompatibility = JavaVersion.VERSION_11&#10;        targetCompatibility = JavaVersion.VERSION_11&#10;    }&#10;    kotlinOptions {&#10;        jvmTarget = &quot;11&quot;&#10;    }&#10;    buildFeatures {&#10;        viewBinding = true&#10;    }&#10;}&#10;&#10;dependencies {&#10;&#10;    implementation(libs.androidx.core.ktx)&#10;    implementation(libs.androidx.appcompat)&#10;    implementation(libs.material)&#10;    implementation(libs.androidx.constraintlayout)&#10;    implementation(libs.androidx.navigation.fragment.ktx)&#10;    implementation(libs.androidx.navigation.ui.ktx)&#10;    testImplementation(libs.junit)&#10;    androidTestImplementation(libs.androidx.junit)&#10;    androidTestImplementation(libs.androidx.espresso.core)&#10;}" />
+              <option name="updatedContent" value="plugins {&#10;    alias(libs.plugins.android.application)&#10;    alias(libs.plugins.kotlin.android)&#10;}&#10;&#10;android {&#10;    namespace = &quot;com.example.unit_testing&quot;&#10;    compileSdk = 36&#10;&#10;    defaultConfig {&#10;        applicationId = &quot;com.example.unit_testing&quot;&#10;        minSdk = 34&#10;        targetSdk = 36&#10;        versionCode = 1&#10;        versionName = &quot;1.0&quot;&#10;&#10;        testInstrumentationRunner = &quot;androidx.test.runner.AndroidJUnitRunner&quot;&#10;    }&#10;&#10;    buildTypes {&#10;        release {&#10;            isMinifyEnabled = false&#10;            proguardFiles(&#10;                getDefaultProguardFile(&quot;proguard-android-optimize.txt&quot;),&#10;                &quot;proguard-rules.pro&quot;&#10;            )&#10;        }&#10;    }&#10;    compileOptions {&#10;        sourceCompatibility = JavaVersion.VERSION_11&#10;        targetCompatibility = JavaVersion.VERSION_11&#10;    }&#10;    kotlinOptions {&#10;        jvmTarget = &quot;11&quot;&#10;    }&#10;    buildFeatures {&#10;        viewBinding = true&#10;    }&#10;}&#10;&#10;dependencies {&#10;&#10;    implementation(libs.androidx.core.ktx)&#10;    implementation(libs.androidx.appcompat)&#10;    implementation(libs.material)&#10;    implementation(libs.androidx.constraintlayout)&#10;    implementation(libs.androidx.navigation.fragment.ktx)&#10;    implementation(libs.androidx.navigation.ui.ktx)&#10;    testImplementation(libs.junit)&#10;    androidTestImplementation(libs.androidx.junit)&#10;    androidTestImplementation(libs.androidx.espresso.core)&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/unit_testing/ui/DummyActivity.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/main/java/com/example/unit_testing/ui/DummyActivity.kt" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/unit_testing/ui/MainActivity.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/main/java/com/example/unit_testing/ui/MainActivity.kt" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/unit_testing/ui/MainViewModel.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/main/java/com/example/unit_testing/ui/MainViewModel.kt" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+              <option name="originalContent" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;    android:fitsSystemWindows=&quot;true&quot;&#10;    tools:context=&quot;.MainActivity&quot;&gt;&#10;&#10;    &lt;com.google.android.material.appbar.AppBarLayout&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:fitsSystemWindows=&quot;true&quot;&gt;&#10;&#10;        &lt;com.google.android.material.appbar.MaterialToolbar&#10;            android:id=&quot;@+id/toolbar&quot;&#10;            android:layout_width=&quot;match_parent&quot;&#10;            android:layout_height=&quot;?attr/actionBarSize&quot; /&gt;&#10;&#10;    &lt;/com.google.android.material.appbar.AppBarLayout&gt;&#10;&#10;    &lt;include layout=&quot;@layout/content_main&quot; /&gt;&#10;&#10;    &lt;com.google.android.material.floatingactionbutton.FloatingActionButton&#10;        android:id=&quot;@+id/fab&quot;&#10;        android:layout_width=&quot;wrap_content&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:layout_gravity=&quot;bottom|end&quot;&#10;        android:layout_marginEnd=&quot;@dimen/fab_margin&quot;&#10;        android:layout_marginBottom=&quot;16dp&quot;&#10;        app:srcCompat=&quot;@android:drawable/ic_dialog_email&quot; /&gt;&#10;&#10;&lt;/androidx.coordinatorlayout.widget.CoordinatorLayout&gt;" />
+              <option name="updatedContent" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;    android:fitsSystemWindows=&quot;true&quot;&#10;    tools:context=&quot;.MainActivity&quot;&gt;&#10;&#10;    &lt;com.google.android.material.appbar.AppBarLayout&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:fitsSystemWindows=&quot;true&quot;&gt;&#10;&#10;        &lt;com.google.android.material.appbar.MaterialToolbar&#10;            android:id=&quot;@+id/toolbar&quot;&#10;            android:layout_width=&quot;match_parent&quot;&#10;            android:layout_height=&quot;?attr/actionBarSize&quot; /&gt;&#10;&#10;    &lt;/com.google.android.material.appbar.AppBarLayout&gt;&#10;&#10;    &lt;include layout=&quot;@layout/content_main&quot; /&gt;&#10;&#10;    &lt;com.google.android.material.floatingactionbutton.FloatingActionButton&#10;        android:id=&quot;@+id/fab&quot;&#10;        android:layout_width=&quot;wrap_content&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:layout_gravity=&quot;bottom|end&quot;&#10;        android:layout_marginEnd=&quot;@dimen/fab_margin&quot;&#10;        android:layout_marginBottom=&quot;16dp&quot;&#10;        app:srcCompat=&quot;@android:drawable/ic_dialog_email&quot; /&gt;&#10;&#10;&lt;/androidx.coordinatorlayout.widget.CoordinatorLayout&gt;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/DummyTest.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/DummyTest.kt" />
+              <option name="updatedContent" value="/**&#10; * Dummy: Used only to fill parameter list, not actually used.&#10; */&#10;import androidx.lifecycle.ViewModel&#10;import androidx.fragment.app.Fragment&#10;&#10;interface Logger {&#10;    fun log(msg: String)&#10;}&#10;&#10;class DummyLogger : Logger {&#10;    override fun log(msg: String) { /* does nothing */ }&#10;}&#10;&#10;class DummyViewModel(private val logger: Logger) : ViewModel() {&#10;    fun doSomething() {&#10;        // logger is not used here&#10;    }&#10;}&#10;&#10;class DummyFragment : Fragment() {&#10;    private val viewModel = DummyViewModel(DummyLogger())&#10;    // ...existing code...&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/FakeTest.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/FakeTest.kt" />
+              <option name="updatedContent" value="/**&#10; * Fake: Has a working implementation, but simplified (e.g., in-memory DB).&#10; */&#10;import androidx.lifecycle.ViewModel&#10;import androidx.fragment.app.Fragment&#10;&#10;interface UserRepository {&#10;    fun addUser(name: String)&#10;    fun getUserCount(): Int&#10;}&#10;&#10;class FakeUserRepository : UserRepository {&#10;    private val users = mutableListOf&lt;String&gt;()&#10;    override fun addUser(name: String) { users.add(name) }&#10;    override fun getUserCount(): Int = users.size&#10;}&#10;&#10;class FakeViewModel(private val repo: UserRepository) : ViewModel() {&#10;    fun addUser(name: String) = repo.addUser(name)&#10;    fun userCount() = repo.getUserCount()&#10;}&#10;&#10;class FakeFragment : Fragment() {&#10;    private val viewModel = FakeViewModel(FakeUserRepository())&#10;    // ...existing code...&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/MockTest.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/MockTest.kt" />
+              <option name="updatedContent" value="/**&#10; * Mock: Verifies interactions, no real implementation.&#10; */&#10;import androidx.lifecycle.ViewModel&#10;import androidx.fragment.app.Fragment&#10;import org.mockito.Mockito.*&#10;&#10;interface Logger {&#10;    fun log(msg: String)&#10;}&#10;&#10;class MockViewModel(private val logger: Logger) : ViewModel() {&#10;    fun doSomething() {&#10;        logger.log(&quot;Mocked action&quot;)&#10;    }&#10;}&#10;&#10;class MockFragment : Fragment() {&#10;    private val logger = mock(Logger::class.java)&#10;    private val viewModel = MockViewModel(logger)&#10;    // ...existing code...&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/SpyTest.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/SpyTest.kt" />
+              <option name="updatedContent" value="/**&#10; * Spy: Records information about calls, can call real methods.&#10; */&#10;import androidx.lifecycle.ViewModel&#10;import androidx.fragment.app.Fragment&#10;&#10;interface Logger {&#10;    fun log(msg: String)&#10;}&#10;&#10;class RealLogger : Logger {&#10;    var lastMessage: String? = null&#10;    override fun log(msg: String) { lastMessage = msg }&#10;}&#10;&#10;class SpyViewModel(private val logger: Logger) : ViewModel() {&#10;    fun doSomething() {&#10;        logger.log(&quot;Action performed&quot;)&#10;    }&#10;}&#10;&#10;class SpyFragment : Fragment() {&#10;    private val logger = RealLogger()&#10;    private val viewModel = SpyViewModel(logger)&#10;    // ...existing code...&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/StubTest.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/StubTest.kt" />
+              <option name="updatedContent" value="/**&#10; * Stub: Provides canned answers to calls made during the test.&#10; */&#10;import androidx.lifecycle.ViewModel&#10;import androidx.fragment.app.Fragment&#10;&#10;interface UserRepository {&#10;    fun addUser(name: String)&#10;    fun getUserCount(): Int&#10;}&#10;&#10;class StubUserRepository : UserRepository {&#10;    override fun addUser(name: String) { /* do nothing */ }&#10;    override fun getUserCount(): Int = 42 // always returns 42&#10;}&#10;&#10;class StubViewModel(private val repo: UserRepository) : ViewModel() {&#10;    fun userCount() = repo.getUserCount()&#10;}&#10;&#10;class StubFragment : Fragment() {&#10;    private val viewModel = StubViewModel(StubUserRepository())&#10;    // ...existing code...&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/TestDoubleExamples.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/TestDoubleExamples.kt" />
+              <option name="updatedContent" value="&#10;import org.junit.Test&#10;import org.mockito.Mockito.*&#10;import org.mockito.kotlin.spy&#10;&#10;// Dummy: Used only to fill parameter list, not actually used.&#10;class DummyLogger : Logger {&#10;    override fun log(msg: String) { /* does nothing */ }&#10;}&#10;&#10;interface Logger {&#10;    fun log(msg: String)&#10;}&#10;&#10;class UserService(private val logger: Logger) {&#10;    fun addUser(name: String) {&#10;        // logger is not used in this method, just required by constructor&#10;    }&#10;}&#10;&#10;class DummyTest {&#10;    @Test&#10;    fun testAddUserWithDummyLogger() {&#10;        val dummyLogger = DummyLogger()&#10;        val service = UserService(dummyLogger)&#10;        service.addUser(&quot;Alice&quot;)&#10;        // No assertion needed, just showing dummy usage&#10;    }&#10;}&#10;&#10;// Fake: Has a working implementation, but simplified (e.g., in-memory DB).&#10;class FakeUserRepository : UserRepository {&#10;    private val users = mutableListOf&lt;String&gt;()&#10;    override fun addUser(name: String) { users.add(name) }&#10;    override fun getUserCount(): Int = users.size&#10;}&#10;&#10;interface UserRepository {&#10;    fun addUser(name: String)&#10;    fun getUserCount(): Int&#10;}&#10;&#10;class FakeTest {&#10;    @Test&#10;    fun testAddUserWithFakeRepository() {&#10;        val repo = FakeUserRepository()&#10;        repo.addUser(&quot;Bob&quot;)&#10;        assert(repo.getUserCount() == 1)&#10;    }&#10;}&#10;&#10;// Stub: Provides canned answers to calls made during the test.&#10;class StubUserRepository : UserRepository {&#10;    override fun addUser(name: String) { /* do nothing */ }&#10;    override fun getUserCount(): Int = 42 // always returns 42&#10;}&#10;&#10;class StubTest {&#10;    @Test&#10;    fun testGetUserCountWithStub() {&#10;        val repo = StubUserRepository()&#10;        assert(repo.getUserCount() == 42)&#10;    }&#10;}&#10;&#10;// Spy: Records information about calls, can call real methods.&#10;class RealLogger : Logger {&#10;    var lastMessage: String? = null&#10;    override fun log(msg: String) { lastMessage = msg }&#10;}&#10;&#10;class SpyTest {&#10;    @Test&#10;    fun testLoggerSpy() {&#10;        val logger = spy(RealLogger())&#10;        logger.log(&quot;Hello&quot;)&#10;        verify(logger).log(&quot;Hello&quot;)&#10;        assert(logger.lastMessage == &quot;Hello&quot;)&#10;    }&#10;}&#10;&#10;// Mock: Verifies interactions, no real implementation.&#10;class MockTest {&#10;    @Test&#10;    fun testLoggerMock() {&#10;        val logger = mock(Logger::class.java)&#10;        val service = UserService(logger)&#10;        service.addUser(&quot;Charlie&quot;)&#10;        // Verify that log was never called&#10;        verify(logger, never()).log(anyString())&#10;    }&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/doubles/DummyViewModelTest.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/doubles/DummyViewModelTest.kt" />
+              <option name="originalContent" value="&#10;" />
+              <option name="updatedContent" value="&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/doubles/FakeViewModelTest.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/doubles/FakeViewModelTest.kt" />
+              <option name="originalContent" value="&#10;" />
+              <option name="updatedContent" value="&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/doubles/MockViewModelTest.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/doubles/MockViewModelTest.kt" />
+              <option name="originalContent" value="&#10;" />
+              <option name="updatedContent" value="&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/doubles/SpyViewModelTest.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/doubles/SpyViewModelTest.kt" />
+              <option name="originalContent" value="&#10;" />
+              <option name="updatedContent" value="&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/doubles/StubViewModelTest.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/test/java/com/example/unit_testing/doubles/StubViewModelTest.kt" />
+              <option name="originalContent" value="&#10;" />
+              <option name="updatedContent" value="&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
