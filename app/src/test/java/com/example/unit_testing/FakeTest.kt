@@ -5,11 +5,7 @@ import org.junit.Test
 //    - Purpose: Defines user data operations.
 //    - Benefit: Can replace real DB with a test double for fast, isolated tests.
 
-interface UserRepository{
-    fun addUser(name:String)
 
-    fun getUserCount():Int
-}
 class ViewModelForFakeImpl(private val repository: UserRepository) {
     fun registerUser(name: String) {
         repository.addUser(name)
@@ -19,6 +15,10 @@ class ViewModelForFakeImpl(private val repository: UserRepository) {
         return repository.getUserCount()
     }
 }
+interface UserRepository{
+    fun addUser(name:String)
+    fun getUserCount():Int
+}
 
 class FakeUserRepository : UserRepository {
     private val users = mutableListOf<String>()
@@ -27,15 +27,12 @@ class FakeUserRepository : UserRepository {
 }
 
 
-//    - Why Fake? Because we want realistic behavior without the overhead of a real DB.
-class FakeUserRepositoryTest {
+class UserRepositoryTest {
 
     @Test
     fun `registerUser adds user and increases count`() {
         val repository = FakeUserRepository()
         val viewModel = ViewModelForFakeImpl(repository)
-
-        // Act: Add a user
         viewModel.registerUser("Alice")
 
         assertEquals(1, viewModel.getRegisteredUserCount())
