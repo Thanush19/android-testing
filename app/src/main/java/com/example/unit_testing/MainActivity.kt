@@ -1,38 +1,39 @@
 package com.example.unit_testing
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
-import com.example.unit_testing.databinding.ActivityMainBinding
+import android.widget.Toast
+import android.widget.TextView
+import android.widget.Button
+import androidx.activity.viewModels
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivityMainBinding
+    private val viewModel: CounterViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        val textViewCounter = findViewById<TextView>(R.id.textViewCounter)
+        val buttonIncrement = findViewById<Button>(R.id.buttonIncrement)
+        val buttonDecrement = findViewById<Button>(R.id.buttonDecrement)
 
-        setSupportActionBar(binding.toolbar)
+        viewModel.counter.observe(this) { count ->
+            textViewCounter.text = count.toString()
+        }
 
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        buttonIncrement.setOnClickListener {
+            if (!viewModel.increment()) {
+                Toast.makeText(this, "Counter cannot exceed 999", Toast.LENGTH_SHORT).show()
+            }
+        }
 
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null)
-                .setAnchorView(R.id.fab).show()
+        buttonDecrement.setOnClickListener {
+            if (viewModel.isPositive()) {
+                viewModel.decrement()
+            } else {
+                Toast.makeText(this, "Counter cannot go below 0", Toast.LENGTH_SHORT).show()
+            }
         }
     }
-
 }
